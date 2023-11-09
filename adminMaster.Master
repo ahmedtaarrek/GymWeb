@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.Master.cs" Inherits="Gym.adminMaster" %>
+
+<!DOCTYPE html>
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       
+        if (Request.Cookies["Userinfo"] != null)
+        { 
+           
+            
+
+        lblMsg.Text = " Welcome to Magnet Gym ";
+}
+
+    }
+</script>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 70px;
+        }
+        .auto-style3 {
+            height: 56px;
+        }
+        .auto-style4 {
+            height: 318px;
+        }
+        .auto-style5 {
+            width: 138px;
+            height: 132px;
+        }
+        .auto-style6 {
+            height: 132px;
+        }
+        .auto-style11 {
+            width: 102px;
+        }
+        .auto-style13 {
+            width: 187px;
+        }
+        .auto-style14 {
+            width: 232px;
+        }
+        .auto-style15 {
+            width: 191px;
+        }
+    </style>
+</head>
+    <BODY bgcolor="black">
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style5">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/Admin pic/EO2DCvjW4AE5zVW.jpg" Width="137px" />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:Label ID="lblMsg" runat="server" Font-Bold="True" Font-Names="Franklin Gothic Demi" Font-Size="XX-Large" ForeColor="White"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style13">
+                                    <asp:HyperLink ID="adminhyper" runat="server" Font-Names="Franklin Gothic Demi" Font-Size="Large" ForeColor="White" NavigateUrl="~/adminHome.aspx">Admin Home</asp:HyperLink>
+                                </td>
+                                <td class="auto-style15">
+                                    <asp:HyperLink ID="userhyper1" runat="server" Font-Names="Franklin Gothic Demi" Font-Size="Large" ForeColor="White" NavigateUrl="~/Manageaccounts.aspx">Manage Accounts</asp:HyperLink>
+                                </td>
+                                <td class="auto-style14">
+                                    <asp:HyperLink ID="schedulehyper1" runat="server" Font-Names="Franklin Gothic Demi" Font-Size="Large" ForeColor="White" NavigateUrl="~/ManageScheduleWorkouts.aspx">Manage Schedule Workout</asp:HyperLink>
+                                </td>
+                                <td class="auto-style11">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" style="vertical-align: top">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td><center>
+<FONT FACE = "arial" color="Gray" size="-1">
+Powered By Ahmed Tarek &copy; 2022 <a href="20192634@fue.edu.eg">contact Webmaster</a>
+</FONT>
+</center></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </form>
+</body>
+</html>
